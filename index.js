@@ -1,6 +1,8 @@
 // run `node index.js` in the terminal
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
+mongoose.connect('your actual server URL');
 // handle ALL requests
 app.all('/*', (req, res) => {
   // send this to client
